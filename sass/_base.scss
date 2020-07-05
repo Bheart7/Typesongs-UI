@@ -1,0 +1,48 @@
+:root {
+  // FONT VARIABLES
+  --font-primary: 'Lato', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+
+  // COLOR VARIABLES
+  --background-color: linear-gradient(to right, #fff 50%, #f08 50%, red);
+  --text-color: #222;
+  --color-light: #fff;
+  --color-light-pink: rgb(245, 179, 209);
+  --color-dark-pink: rgb(240, 100, 142);
+  --text-pink: rgba(253, 254, 240, 0.8);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(mini-tab) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+}
+
+body {
+  // height: 100vh;
+  font-family: var(--font-primary);
+  font-weight: normal;
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.container {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="shortcut icon" href="css/logoT.png" type="image/png" />
+    <title>Typesongs | Learn by typing your favorite songs.</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="container nav__container">
+          <div class="nav__logo">
+            <img class="nav__logoImage" src="css/logo.png" alt="logo" /><span
+              class="nav__logoText"
+              >Typesongs</span
+            >
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="companions.html" class="nav__link">Companions</a>
+            </li>
+            <li class="nav__item">
+              <a href="jobs.html" class="nav__link">Jobs</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html" class="nav__link">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="getstarted">
+        <div class="model">
+          &nbsp;
+          <div class="model__inner">
+            <button class="model__crossBtn" onclick="modelDisplay()">X</button>
+            <h2 class="heading--2 model__heading">Start typing Songs</h2>
+            <p class="model__text heading--4">
+              Have <strong>Headphones</strong> on <br />
+              <strong>Sing</strong> along, <strong>Type</strong> along the
+              lyrics <br />
+              Enjoy it !!!
+            </p>
+          </div>
+        </div>
+        <!-- Visualizer -->
+        <input type="file" id="input" onchange="handleFiles(this.files)" />
+        <button id="playSampleButton" type="button" onClick="playSample()">
+          Play Sample File
+        </button>
+        <button id="useMicButton" type="button" onClick="useMic()">
+          Use Microphone
+        </button>
+        <span id="loading"></span>
+        <div id="song_info_wrapper">
+          <!-- <div id="artist">Unknown Artist</div>
+                      <div id="title">Unknown title</div>
+                      <div id="album">Unknown Album</div> -->
+
+          <div class="center">
+            <h2 class="heading-2 fromLeft" id="current-word">hello</h2>
+            <input
+              class="textInput"
+              id="word-input"
+              type="text"
+              name="input"
+              placeholder="Start typing..."
+              autofocus
+            />
+            <h4 class="heading-4 message" id="message"></h4>
+          </div>
+        </div>
+
+        <canvas id="freq" width="525" height="525"></canvas>
+
+        <!-- Visualizer -->
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__logo">
+            <img class="footer__logoImage" src="css/logo.png" alt="logo" /><span
+              class="footer__logoText"
+              >Typesongs</span
+            >
+            <p class="footer__text">&copy; 2020</p>
+          </div>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="shortcut icon" href="css/logoT.png" type="image/png" />
+    <title>Typesongs | Learn by typing your favorite songs.</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="container nav__container">
+          <div class="nav__logo">
+            <img class="nav__logoImage" src="css/logo.png" alt="logo" /><span
+              class="nav__logoText"
+              >Typesongs</span
+            >
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="companions.html" class="nav__link">Companions</a>
+            </li>
+            <li class="nav__item">
+              <a href="jobs.html" class="nav__link">Jobs</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html" class="nav__link">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="keyboard__wrapper">
+        <div class="model">
+          &nbsp;
+          <div class="model__inner">
+            <button class="model__crossBtn" onclick="modelDisplay()">X</button>
+            <h2 class="heading--2 model__heading">#Challenge 1</h2>
+            <p class="model__text heading--4">
+              Type the <strong>'F'</strong> key <br />
+              with your left index finger <br />
+              and the <strong>'J'</strong> key <br />
+              with your right index finger
+            </p>
+          </div>
+        </div>
+
+        <div class="keyboard">
+          <div id="192" class="btn">`</div>
+          <div id="49" class="btn">1</div>
+          <div id="50" class="btn">2</div>
+          <div id="51" class="btn">3</div>
+          <div id="52" class="btn">4</div>
+          <div id="53" class="btn">5</div>
+          <div id="54" class="btn">6</div>
+          <div id="55" class="btn">7</div>
+          <div id="56" class="btn">8</div>
+          <div id="57" class="btn">9</div>
+          <div id="48" class="btn">0</div>
+          <div id="173" class="btn">-</div>
+          <div id="61" class="btn">=</div>
+          <div id="8" class="btn backspace">
+            <p>Backspace</p>
+          </div>
+          <div id="144" class="btn">Num<span>Lock</span></div>
+          <div id="111" class="btn">/</div>
+          <div id="106" class="btn">*</div>
+          <div id="109" class="btn">-</div>
+          <div id="9" class="btn tab">Tab</div>
+          <div id="81" class="btn">Q</div>
+          <div id="87" class="btn">W</div>
+          <div id="69" class="btn">E</div>
+          <div id="82" class="btn">R</div>
+          <div id="84" class="btn">T</div>
+          <div id="89" class="btn">Y</div>
+          <div id="85" class="btn">U</div>
+          <div id="73" class="btn">I</div>
+          <div id="79" class="btn">O</div>
+          <div id="80" class="btn">P</div>
+          <div id="219" class="btn">[</div>
+          <div id="221" class="btn">]</div>
+          <div id="220" class="btn">\</div>
+          <div id="36" class="btn">7</div>
+          <div id="38" class="btn">8</div>
+          <div id="33" class="btn">9</div>
+          <div id="107" class="btn plus">+</div>
+          <div id="20" class="btn caps">Caps</div>
+          <div id="65" class="btn">A</div>
+          <div id="83" class="btn">S</div>
+          <div id="68" class="btn">D</div>
+          <div id="70" class="btn">F</div>
+          <div id="71" class="btn">G</div>
+          <div id="72" class="btn">H</div>
+          <div id="74" class="btn">J</div>
+          <div id="75" class="btn">K</div>
+          <div id="76" class="btn">L</div>
+          <div id="59" class="btn">;</div>
+          <div id="222" class="btn">'</div>
+          <div id="13" class="btn enter">Enter</div>
+          <div id="37" class="btn">4</div>
+          <div id="12" class="btn">5</div>
+          <div id="39" class="btn">6</div>
+          <div id="16" class="btn shift">Shift</div>
+          <div id="90" class="btn">Z</div>
+          <div id="88" class="btn">X</div>
+          <div id="67" class="btn">C</div>
+          <div id="86" class="btn">V</div>
+          <div id="66" class="btn">B</div>
+          <div id="78" class="btn">N</div>
+          <div id="77" class="btn">M</div>
+          <div id="188" class="btn">,</div>
+          <div id="190" class="btn">.</div>
+          <div id="191" class="btn">/</div>
+          <div id="16" class="btn shift2">Shift</div>
+          <div id="35" class="btn">1</div>
+          <div id="40" class="btn">2</div>
+          <div id="34" class="btn">3</div>
+          <div id="13" class="btn enter2">Enter</div>
+          <div id="17" class="btn">Ctrl</div>
+          <div class="btn">Fn</div>
+          <div id="91" class="btn">Win</div>
+          <div id="18" class="btn">Alt</div>
+          <div id="32" class="btn space">Space</div>
+          <div id="18" class="btn">Alt</div>
+          <div id="93" class="btn">i</div>
+          <div id="17" class="btn">Ctrl</div>
+          <div id="37" class="btn">l</div>
+          <div id="40" class="btn">t<span>d</span></div>
+          <div id="39" class="btn">r</div>
+          <div id="45" class="btn">0</div>
+          <div id="45" class="btn">0</div>
+          <div id="46" class="btn">.</div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__logo">
+            <img class="footer__logoImage" src="css/logo.png" alt="logo" /><span
+              class="footer__logoText"
+              >Typesongs</span
+            >
+            <p class="footer__text">&copy; 2020</p>
+          </div>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/keyboard.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

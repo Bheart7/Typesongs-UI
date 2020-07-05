@@ -1,0 +1,21 @@
+%heading {
+  font-family: var(--font-primary);
+}
+
+.heading--1 {
+  @extend %heading;
+  font-size: 7rem;
+}
+
+.heading--2 {
+  @extend %heading;
+  font-size: 5.5rem;
+}
+.heading--3 {
+  @extend %heading;
+  font-size: 5rem;
+}
+.heading--4 {
+  @extend %heading;
+  font-size: 3.5rem;
+}

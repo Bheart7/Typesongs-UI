@@ -1,0 +1,50 @@
+.graffiti {
+  height: 100vh;
+  background-image: url(../css/graffiti.jpg);
+  background-size: cover;
+  position: relative;
+
+  @include respond(phone) {
+    height: 50vh;
+    width: auto;
+  }
+
+  &__heading {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: none;
+    background-color: var(--color-light);
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.5);
+    transition: all 0.2s;
+  }
+
+  &__btn:hover {
+    transform: translate(-50%, -58%);
+    box-shadow: 2px 2px 10px rgba(34, 34, 34, 0.5);
+  }
+  &__btn:active {
+    transform: translate(-50%, -46%);
+    box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.5);
+  }
+
+  &__btn:focus,
+  &__link:focus {
+    outline: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 1.2rem 1.7rem;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}

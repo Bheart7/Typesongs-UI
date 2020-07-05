@@ -1,0 +1,25 @@
+.jobs {
+  height: 80vh;
+  &__posting {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 15rem;
+    width: 60%;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 2px 2px rgba($color: #222, $alpha: 0.4);
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,55 @@
+.post {
+  &__card:first-child {
+    margin-top: 15rem;
+  }
+
+  &__card {
+    margin: 5rem auto;
+    width: 60%;
+    height: 70vh;
+    background-color: #222;
+    border-radius: 30px;
+    box-shadow: 0 2px 2px rgba($color: #222, $alpha: 0.4);
+    overflow: hidden;
+    position: relative;
+
+    @include respond(laptop) {
+      height: 40vh;
+      width: 50%;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    @include respond(laptop) {
+      height: 100%;
+    }
+  }
+
+  &__status {
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__btn {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s;
+  }
+
+  &__btn:hover {
+    transform: scale(1.2);
+  }
+
+  &__btn:focus {
+    outline: none;
+  }
+}

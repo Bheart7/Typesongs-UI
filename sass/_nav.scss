@@ -1,0 +1,98 @@
+.nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: var(--background-color);
+  background-size: cover;
+  font-family: var(--font-secondary);
+  box-shadow: 0 2px 10px 2px rgba(34, 34, 34, 0.2);
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__logo {
+    margin-left: 10rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__logoImage {
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  &__logoText {
+    font-family: 'engagement';
+    margin-left: -2.5rem;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ff067a;
+
+    @supports ((background-clip: text)) {
+      background-image: linear-gradient(
+        to right bottom,
+        #62ce44 10%,
+        #fb5545 20%,
+        #6627f4 30%,
+        #1b95ea 40%,
+        #ff067a 50%,
+        #a00096 60%,
+        #ffb30f 70%,
+        #1b95ea 70%
+      );
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 6rem;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
+
+    @include respond(tab-land) {
+      column-gap: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      column-gap: 2rem;
+    }
+
+    @include respond(mini-tab) {
+      column-gap: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    transition: all 0.15s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border: 0;
+    // color: var(--color-light);
+    // color: rgb(255, 0, 136);
+    // text-shadow: 0 0 2px rgba(34, 34, 34, 1);
+    transform: translateY(-2px) scale(1.3);
+  }
+}

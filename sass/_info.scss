@@ -1,0 +1,34 @@
+.info {
+  background-image: var(--background-color);
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  align-items: center;
+  row-gap: 5rem;
+  transition: all 0.2s;
+
+  &__heading {
+    text-decoration: underline;
+    // margin-bottom: 7rem;
+  }
+  &__svg {
+    margin-bottom: 7rem;
+    width: 60rem;
+    height: auto;
+  }
+  &__answer {
+  }
+  &__text {
+    display: inline-block;
+    &--1 {
+      animation: moveUp 0.6s ease-out;
+      animation-direction: backwards;
+    }
+
+    &--2 {
+      animation: moveUp 0.6s ease-out 1.5s;
+      animation-direction: backwards;
+    }
+  }
+}

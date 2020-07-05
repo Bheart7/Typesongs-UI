@@ -1,0 +1,110 @@
+.payment {
+  margin-top: 10rem;
+  height: 95vh;
+  background-image: url(../css/wave.svg);
+  background-size: cover;
+  background-position: left;
+
+  @include respond(phone) {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  & > .heading--3,
+  .heading--4 {
+    padding: 4rem 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    @include respond(phone) {
+      grid-template-columns: none;
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 4rem;
+    }
+  }
+
+  &__card {
+    width: 28rem;
+    height: 40rem;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.5);
+    transition: all 0.2s;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+
+    @include respond(ipad) {
+      width: 25rem;
+      height: 35rem;
+    }
+    @include respond(phone) {
+      width: 40rem;
+      height: 55rem;
+    }
+  }
+
+  &__card:hover {
+    transform: scale(1.15);
+
+    @include respond(ipad) {
+      transform: scale(1.05);
+    }
+  }
+
+  &__text {
+    padding: 1rem 0;
+    color: #fff;
+  }
+
+  &__price {
+    padding: 1rem 0;
+    color: white;
+  }
+
+  &__bottom {
+    margin: 0 -3rem;
+    margin-bottom: -2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.4);
+  }
+
+  &__card--1 {
+    background-image: url(../css/beginner.jpg);
+    background-size: cover;
+  }
+  &__card--2 {
+    background-image: url(../css/intermediate.jpg);
+    background-size: cover;
+  }
+  &__card--3 {
+    background-image: url(../css/expert.jpg);
+    background-size: cover;
+  }
+
+  &__btn {
+    cursor: pointer;
+    font-size: 2.2rem;
+    border: none;
+    background-color: var(--color-light);
+    padding: 1.2rem 1.7rem;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.5);
+    transition: all 0.2s;
+  }
+
+  &__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 10px rgba(34, 34, 34, 0.5);
+  }
+  &__btn:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.5);
+  }
+}
